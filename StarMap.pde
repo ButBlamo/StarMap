@@ -1,3 +1,10 @@
+/* Daniel Moloney C15446648
+
+   Date: 08/11/2016
+   
+   NOTE TO SELF: get faster at coding
+*/
+
 //New arraylist
 ArrayList<Star> stars = new ArrayList<Star>();
 
@@ -19,6 +26,20 @@ void setup()
 
 void draw()
 {
+  int i;
+  Star plotting_stars = null;
+  //Plotting stars onto grid
+  
+  for (i = 0; i < stars.size(); i++)
+  {
+    plotting_stars = stars.get(i);
+    
+    stroke(255);
+    
+    //Failed attempt at plotting stars
+    ellipse(plotting_stars.xCoords, plotting_stars.yCoords, 5, 5);
+    
+  }
 }
 
 
@@ -71,7 +92,6 @@ void drawGrid()
 {
   //Counters in loop
   int i, j;
-  int border = 50;
   
   stroke(50, 0, 255);
   noFill();
@@ -93,6 +113,4 @@ void drawGrid()
     }
     
   }
-  
-  
-}
+}//End fxn drawGrid
