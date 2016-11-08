@@ -26,7 +26,7 @@ class Star
     this.starSize = star_size;
   }
   
-  /*
+  /* possibly used later if I wrap my head around it
   Star (TableRow row)
   {
     this.
